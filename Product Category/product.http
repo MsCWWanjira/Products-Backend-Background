@@ -1,0 +1,24 @@
+
+GET http://localhost:4000/category/
+#-----GETS ALL THE CATEGORIES FROM THE DATABASE THAT EXIST
+
+######
+GET http://localhost:4000/category/229de757-861d-4cd5-bff8-b90f8aa7a58c
+#-----GETS CATEGORY BY ID
+
+######
+
+
+POST  http://localhost:4000/category
+#-----ADDS A NEW CATEGORY TO OUR DATABASE
+Content-Type: application/json
+
+{
+    "Name":"Will i be deleted"
+}
+
+#######
+DELETE http://localhost:4000/category/8a545578-1fff-4cc3-9fcb-fccce873fe21
+#-----DELETES A SPECIFIC CATEGORY BY ITS ID
+
+######

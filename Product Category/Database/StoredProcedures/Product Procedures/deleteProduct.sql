@@ -1,0 +1,8 @@
+USE Inventory
+GO
+CREATE OR ALTER PROCEDURE deleteProduct(@Id VARCHAR(255))
+AS
+BEGIN
+DELETE FROM Products WHERE Id=@Id
+END
+GO

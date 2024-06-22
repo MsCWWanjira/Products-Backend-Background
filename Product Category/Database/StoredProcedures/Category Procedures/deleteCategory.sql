@@ -1,0 +1,8 @@
+USE Inventory
+GO
+CREATE OR ALTER PROCEDURE deleteCategory(@Id VARCHAR(255))
+AS
+BEGIN
+DELETE FROM Category WHERE Id=@Id
+END
+GO

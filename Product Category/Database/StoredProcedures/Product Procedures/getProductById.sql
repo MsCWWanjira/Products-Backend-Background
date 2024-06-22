@@ -1,0 +1,8 @@
+USE Inventory
+GO
+CREATE OR ALTER PROCEDURE getProductById(@Id VARCHAR(255))
+AS
+BEGIN
+SELECT * FROM Products WHERE Id=@Id
+END
+GO

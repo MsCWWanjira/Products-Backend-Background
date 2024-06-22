@@ -1,0 +1,7 @@
+USE Inventory
+GO
+CREATE OR ALTER PROCEDURE getCategoryById(@Id VARCHAR(255))
+AS
+BEGIN
+SELECT * FROM Category WHERE Id=@Id
+END
